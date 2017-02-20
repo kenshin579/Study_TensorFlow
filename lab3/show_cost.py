@@ -30,6 +30,7 @@ for i in range(-30, 50):
     W_val.append(i * 0.1)
     cost_val.append(sess.run(cost, feed_dict={W: i * 0.1}))
 
+# Graphic display
 plt.plot(W_val, cost_val, 'ro')
 plt.ylabel('cost')
 plt.xlabel('W')
